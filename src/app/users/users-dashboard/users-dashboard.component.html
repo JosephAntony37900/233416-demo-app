@@ -1,0 +1,42 @@
+<div id="table">
+    <table border="1px black">
+        <tr id="table-headers">
+            <th>
+                ID
+            </th>
+            <th>
+                NAME
+            </th>
+            <th>
+                USERNAME
+            </th>
+            <th>
+                EMAIL
+            </th>
+            <th>
+                PHONE
+            </th>
+            <th>
+                WEBSITE
+            </th>
+            
+            
+        </tr>
+
+        <tr class="data-user " *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
+        </tr>
+    </table>
+
+    <h1> FORMULARIO DE USUARIOS</h1>
+
+    <app-edit-user-form 
+    [user]="selectedUser" [disabled]="true"
+    (eventEmitter)="addUser($event)"
+    ></app-edit-user-form>
+</div>
