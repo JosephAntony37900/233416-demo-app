@@ -32,4 +32,11 @@
             <td>{{user.website}}</td>
         </tr>
     </table>
+
+    <h1> FORMULARIO DE USUARIOS</h1>
+
+    <app-edit-user-form 
+    [user]="selectedUser" [disabled]="true"
+    (eventEmitter)="addUser($event)"
+    ></app-edit-user-form>
 </div>
