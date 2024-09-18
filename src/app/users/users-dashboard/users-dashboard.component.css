@@ -1,0 +1,46 @@
+#table {
+    width: 100%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+}
+
+#table table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+#table th, #table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#table th {
+    background-color: #DD0031; 
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#table .data-user td {
+    background-color: #f9f9f9;
+}
+
+#table .data-user:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table .data-user:hover {
+    background-color: #FF6F61; 
+    cursor: pointer;
+}
+
+#table th, #table td {
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+#table td:last-child, #table th:last-child {
+    border-right: none;
+}
